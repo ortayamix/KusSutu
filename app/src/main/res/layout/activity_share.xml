@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ShareActivity">
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/im_share_1"
+        android:layout_width="270dp"
+        android:layout_height="480dp"
+        android:background="@drawable/roundcorner"
+        android:foreground="#66222f3e"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- android:src="@drawable/b2"-->
+
+
+    <TextView
+        android:id="@+id/tv_share_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selam"
+        android:gravity="center"
+        app:font_name="@{`ubuntu_medium.ttf`}"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/white"
+        android:layout_margin="18dp"
+        app:autoSizeMaxTextSize="36sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/im_share_1"
+        app:layout_constraintEnd_toEndOf="@+id/im_share_1"
+        app:layout_constraintStart_toStartOf="@+id/im_share_1"
+        app:layout_constraintTop_toTopOf="@+id/im_share_1"/>
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/im_share_2"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="@drawable/roundcorner"
+        android:foreground="#66222f3e"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- android:src="@drawable/b2"-->
+
+
+    <TextView
+        android:id="@+id/tv_share_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Selam"
+        app:font_name="@{`ubuntu_medium.ttf`}"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/white"
+        android:layout_margin="18dp"
+        app:autoSizeMaxTextSize="36sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/im_share_2"
+        app:layout_constraintEnd_toEndOf="@+id/im_share_2"
+        app:layout_constraintStart_toStartOf="@+id/im_share_2"
+        app:layout_constraintTop_toTopOf="@+id/im_share_2" />
+
+    <Button
+        android:id="@+id/btn_share_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Hikaye"
+        app:layout_constraintEnd_toStartOf="@+id/btn_share_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_share_1"/>
+
+    <Button
+        android:id="@+id/btn_share_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Gönderi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_share_1"
+        app:layout_constraintTop_toBottomOf="@+id/im_share_1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

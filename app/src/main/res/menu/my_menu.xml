@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+    -->
+
+    <item
+        android:id="@+id/item_search_display"
+        android:title="Ara"
+        android:icon="@drawable/ic_menu_search_24"
+        android:background="?attr/colorPrimary"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:visible="false"
+        android:id="@+id/item_options"
+        android:icon="@drawable/ic_baseline_menu_36"
+        android:title="Menu"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:visible="false"
+        android:id="@+id/item_notify"
+        android:title="Bildirim Oluştur"
+        android:icon="@drawable/ic_menu_notifications_24"
+        android:background="?attr/colorPrimary"
+        app:showAsAction="always"
+        />
+
+    <!--
+    app:showAsAction="collapseActionView|withText"
+    -->
+
+</menu>

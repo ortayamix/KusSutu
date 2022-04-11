@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roundcorner_bildirim" >
+
+    <TextView
+        android:id="@+id/tv_notify_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Namaz vakitlerinde"
+        android:textSize="26sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--
+            android:text="Günde kaç bildirim"
+-->
+
+    <TextView
+        android:id="@+id/tv_notify_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bildirim almak ister misiniz?"
+        android:textColor="#10A3CD"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notify_1" />
+    <!--
+            android:text="almak istersiniz?"
+-->
+
+    <NumberPicker
+        android:visibility="gone"
+        android:id="@+id/numberPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:theme="@style/ThemeOverlay.NumberPicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notify_2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_notify_saved"
+        />
+
+    <Button
+        android:id="@+id/btn_notify_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:backgroundTint="#FF000D"
+        android:text="Bildirimleri İptal Et"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notify_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_notify_saved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:backgroundTint="#10A3CD"
+        android:text="Kaydet"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notify_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_notify_cancel" />
+
+    <!--
+            app:layout_constraintTop_toBottomOf="@+id/tv_notify_2"
+            üstteki 2 butonda bu yoktu eklendi
+-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

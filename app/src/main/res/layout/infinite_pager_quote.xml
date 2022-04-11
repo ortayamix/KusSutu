@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    android:id="@+id/const_viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        app:font_name="@{`ubuntu_medium`}"
+        android:lineSpacingMultiplier="1.2"
+        android:text="Her bulduğum şeyi kaybedeceğimin korkusunu taşıyorum"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        android:scrollHorizontally="true"
+
+        app:autoSizeMaxTextSize="36sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!--
+        app:autoSizeTextType="uniform"
+    -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

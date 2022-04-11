@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp" >
+
+    <RelativeLayout
+        android:id="@+id/rel_lay_recyle3"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="8dp">
+        <!-- f22534 -->
+
+        <ImageView
+            android:id="@+id/imgV_bckg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            app:cardCornerRadius="6dp"
+            android:scaleType="centerCrop" />
+        <!-- android:src="@drawable/b2" -->
+
+        <!-- android:foreground="#66222f3e"  -->
+
+        <TextView
+            android:id="@+id/tv_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kuş Sütü"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

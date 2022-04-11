@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+
+            <size
+                android:width="55dp"
+                android:height="55dp" />
+
+            <stroke
+                android:width="1dp"
+                android:color="#10A3CD" />
+
+            <solid android:color="#99FFFFFF" />
+
+            <corners android:radius="12dp" />
+            <padding
+                android:right="15dp"
+                android:left="15dp"
+                android:top="15dp"
+                android:bottom="15dp" />
+
+        </shape>
+    </item>
+
+    <item
+        android:drawable="@drawable/ic_baseline_north_east_18" />
+
+</layer-list>

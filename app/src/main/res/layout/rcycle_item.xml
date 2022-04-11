@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="12dp" >
+
+    <RelativeLayout
+        android:id="@+id/rel_lay_recyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <!-- f22534 -->
+
+        <TextView
+            android:id="@+id/tv_rcyc_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Course Name"
+            android:background="#6aa84f"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_lay_recyle_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rcyc_name"
+            android:background="#D96aa84f">
+
+            <TextView
+                android:id="@+id/tv_recy_descr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="Course Description"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:id="@+id/img_btn_save_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_bookmark_border_24"
+                android:visibility="visible" />
+
+            <!--ImageButton
+                android:id="@+id/img_btn_delete_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:background="@null"
+                android:padding="5dp"
+                android:layout_toStartOf="@+id/img_btn_search_share"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_baseline_delete_24" />
+
+            <ImageButton
+                android:id="@+id/img_btn_search_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_toStartOf="@+id/img_btn_search_share"
+                android:background="@null"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_favorite_24"
+                android:visibility="visible" /-->
+
+            <!--ImageButton
+                android:id="@+id/img_btn_search_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_toStartOf="@+id/img_btn_search_share"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_baseline_content_copy_24" /-->
+
+            <!--ImageButton
+                android:id="@+id/img_btn_search_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_share_24" /-->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:alignmentMode="alignBounds"
+    android:columnCount="2"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_tfl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#b00b69"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_gravity="fill_horizontal"
+        android:text="Tefeül" />
+
+    <Button
+        android:id="@+id/btn_normal_oku"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#c3d825"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_gravity="fill_horizontal"
+        android:text="Normal Oku" />
+
+    <Button
+        android:id="@+id/button_arama"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#32cd32"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_gravity="fill_horizontal"
+        android:text="Arama" />
+
+    <Button
+        android:id="@+id/button_favoriler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#0066aa"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_gravity="fill_horizontal"
+        android:text="Favoriler" />
+
+</GridLayout>
